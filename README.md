@@ -8,3 +8,4 @@ Electronics are design with EasyEDA.<BR />
 Only electronics, you can choose the microcontroller of your choice, the base design have addtionnal card for Mega2560R3.
 
 For mine i use Mega2560R3 and Mobiflight --> <a href='https://www.mobiflight.com/en/index.html'>MOBIFLIGHT</a>
+For others controllers you need to design the support for the card, or add wires to link them.

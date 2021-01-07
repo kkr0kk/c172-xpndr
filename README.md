@@ -22,3 +22,4 @@ High Frequency Low ESR Aluminum Capacitor 10µF 10V x1 --> <a href='https://www.
 Capacitor 0.1µF x1 --> <a href='https://fr.aliexpress.com/item/32719073307.html?spm=a2g0o.productlist.0.0.5a29ffee2lW9PU&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100185559405052e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 Resistor 1/4W 1k&#x2126; x2<BR />
 Resistor 1/4W 10k&#x2126; x1<BR />
+Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/33043163402.html?spm=a2g0o.productlist.0.0.20038875rufBHE&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100186293925166e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />

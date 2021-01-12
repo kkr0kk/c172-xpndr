@@ -2,7 +2,7 @@
 SIM Cessna 172 - Transpondeur
 
 Build your own transponder for simulation cessna 172.<BR />
-Format 160x41 mm
+Format 160x41 mm<BR />
 Electronics are design with EasyEDA.<BR />
 3D parts are design with SolidWorks.<BR />
 

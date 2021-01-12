@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="9d72a35f-fc5b-478a-b859-c8a7cc18f500">
+      <active>true</active>
+      <description>Transponder code</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0354" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a6e2e98-41d9-4568-8d1d-31f33fac805f">
+      <active>true</active>
+      <description>LED on</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="XPNDR/ SN-850-5fd" trigger="normal" pin="LED on" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c582faf7-8f0e-4747-ae7a-a88888efb292" placeholder="§" />
+          <configref active="False" ref="9d72a35f-fc5b-478a-b859-c8a7cc18f500" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c582faf7-8f0e-4747-ae7a-a88888efb292">
+      <active>true</active>
+      <description>LED alt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="XPNDR/ SN-850-5fd" trigger="normal" pin="LED alt" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="0a6e2e98-41d9-4568-8d1d-31f33fac805f" placeholder="§" />
+          <configref active="False" ref="9d72a35f-fc5b-478a-b859-c8a7cc18f500" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="1f654a9d-e425-48b5-bead-5b470e7a711f">
+      <active>true</active>
+      <description>IDT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="IDT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderIDT" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="cc07e3df-0ea9-47cc-aa69-f367e1199cba">
+      <active>true</active>
+      <description>CLEAR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="CLEAR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderCLR" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="1de21c4e-21e9-4a45-a59a-8b6e9a95b9fd">
+      <active>true</active>
+      <description>VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderVFR" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="93b44c5e-c7e5-4084-b5ef-c00220e9414a">
+      <active>true</active>
+      <description>0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="f002eb23-814b-442e-9804-bad8d7514045">
+      <active>true</active>
+      <description>1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder1" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="872793cd-f2d2-416d-a8aa-dbc9e1144ce7">
+      <active>true</active>
+      <description>2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder2" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="17e814ef-2543-4741-8c4f-0a425c14d69f">
+      <active>true</active>
+      <description>3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder3" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="66898afb-5b9a-4600-9992-f3b577a280b6">
+      <active>true</active>
+      <description>4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder4" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="71034fa8-bf70-4afc-8513-de01c9ce7747">
+      <active>true</active>
+      <description>5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder5" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="e6403c26-27ac-4923-ab03-9cac7f0bbc57">
+      <active>true</active>
+      <description>6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder6" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="0515017e-2e33-4b05-aade-b046b9d09fb6">
+      <active>true</active>
+      <description>7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Transponder7" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

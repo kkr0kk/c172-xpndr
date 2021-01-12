@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="SCREEN" DinPin="22" ClsPin="24" ClkPin="23" Brightness="7" NumModules="1" />
+  <Button Name="mode off" Pin="25" />
+  <Button Name="mode standby" Pin="26" />
+  <Button Name="mode test" Pin="27" />
+  <Button Name="mode on" Pin="28" />
+  <Button Name="mode alt" Pin="29" />
+  <Button Name="IDT" Pin="30" />
+  <Button Name="CLEAR" Pin="31" />
+  <Button Name="VFR" Pin="32" />
+  <Button Name="0" Pin="33" />
+  <Button Name="1" Pin="34" />
+  <Button Name="2" Pin="35" />
+  <Button Name="3" Pin="36" />
+  <Button Name="4" Pin="37" />
+  <Button Name="5" Pin="38" />
+  <Button Name="6" Pin="39" />
+  <Button Name="7" Pin="40" />
+  <Output Name="LED on" Pin="41" />
+  <Output Name="LED alt" Pin="42" />
+</Config>

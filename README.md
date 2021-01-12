@@ -91,3 +91,5 @@ Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/330431634
 	<td>GND</td><td>30</td><td>GND</td>
 </tr>
 </table>
+
+TEXT is printing with this technics --> https://www.youtube.com/watch?v=t8PpQtInVhE

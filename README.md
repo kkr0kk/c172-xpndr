@@ -25,25 +25,49 @@ Resistor 1/4W 10k&#x2126; x1<BR />
 Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/33043163402.html?spm=a2g0o.productlist.0.0.20038875rufBHE&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100186293925166e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/C172-XPNDR-3D.png' /><BR />
-
-PIN mega2560 R3 || PIN Header H1 || Device
-		5V				1			--		
-		22				2			U1 - DIN (LCD)
-		23				3			U1 - CLK (LCD)
-		24				4			U1 - LOAD (LCD)
-		25				5			SW1 - mode off
-		26				6			SW1 - mode standby
-		27				7			SW1 - mode
-		28				8			SW1 - mode 
-		29				9			SW1 - mode
-		30				10			SW2 - IDT
-		31				11			SW3 - CLEAR
-		32				12			SW4 - VFR
-		33				13			SW5 - 0
-		34				14			SW6 - 1
-		35				15			SW6 - 2
-		36				16			SW6 - 3
-		37				17			SW6 - 4
-		38				18			SW6 - 5
-		39				19			SW6 - 6
-		40				20			SW6 - 7		
+<table>
+<th>
+	<td>PIN mega2560 R3</td><td>PIN Header H1</td><td>Device</td>
+</th>
+<tr>
+	<td>5V</td><td>1</td><td>--</td>
+</tr><tr>
+	<td>22</td><td>2</td><td>U1 - DIN (LCD)</td>
+</tr><tr>
+	<td>23</td><td>3</td><td>U1 - CLK (LCD)</td>
+</tr><tr>
+	<td>24</td><td>4</td><td>U1 - LOAD (LCD)</td>
+</tr><tr>
+	<td>25</td><td>5</td><td>SW1 - mode off</td>
+</tr><tr>
+	<td>26</td><td>6</td><td>SW1 - mode standby</td>
+</tr><tr>
+	<td>27</td><td>7</td><td>SW1 - mode</td>
+</tr><tr>
+	<td>28</td><td>8</td><td>SW1 - mode</td>
+</tr><tr>
+	<td>29</td><td>9</td><td>SW1 - mode</td>
+</tr><tr>
+	<td>30</td><td>10</td><td>SW2 - IDT</td>
+</tr><tr>
+	<td>31</td><td>11</td><td>SW3 - CLEAR</td>
+</tr><tr>
+	<td>32</td><td>12</td><td>SW4 - VFR</td>
+</tr><tr>
+	<td>33</td><td>13</td><td>SW5 - 0</td>
+</tr><tr>
+	<td>34</td><td>14</td><td>SW6 - 1</td>
+</tr><tr>
+	<td>35</td><td>15</td><td>SW6 - 2</td>
+</tr><tr>
+	<td>36</td><td>16</td><td>SW6 - 3</td>
+</tr><tr>
+	<td>37</td><td>17</td><td>SW6 - 4</td>
+</tr><tr>
+	<td>38</td><td>18</td><td>SW6 - 5</td>
+</tr><tr>
+	<td>39</td><td>19</td><td>SW6 - 6</td>
+</tr><tr>
+	<td>40</td><td>20</td><td>SW6 - 7</td>
+</tr>
+</table>

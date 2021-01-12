@@ -69,5 +69,25 @@ Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/330431634
 	<td>39</td><td>19</td><td>SW6 - 6</td>
 </tr><tr>
 	<td>40</td><td>20</td><td>SW6 - 7</td>
+</tr><tr>
+	<td>41</td><td>21</td><td>LED on/off</td>
+</tr><tr>
+	<td>42</td><td>22</td><td>LED not use yet</td>
+</tr><tr>
+	<td>-</td><td>23</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>24</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>25</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>26</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>27</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>28</td><td>not use</td>
+</tr><tr>
+	<td>-</td><td>29/td><td>not use</td>
+</tr><tr>
+	<td>GND</td><td>30</td><td>GND</td>
 </tr>
 </table>

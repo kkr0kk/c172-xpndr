@@ -86,7 +86,7 @@ Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/330431634
 </tr><tr>
 	<td>-</td><td>28</td><td>not use</td>
 </tr><tr>
-	<td>-</td><td>29/td><td>not use</td>
+	<td>-</td><td>29</td><td>not use</td>
 </tr><tr>
 	<td>GND</td><td>30</td><td>GND</td>
 </tr>

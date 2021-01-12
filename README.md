@@ -26,9 +26,9 @@ Header male angle 30pin x1 --> <a href='https://fr.aliexpress.com/item/330431634
 
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/C172-XPNDR-3D.png' /><BR />
 <table>
-<th>
-	<td>PIN mega2560 R3</td><td>PIN Header H1</td><td>Device</td>
-</th>
+<tr>
+	<th>PIN mega2560 R3</th><th>PIN Header H1</th><th>Device</th>
+</tr>
 <tr>
 	<td>5V</td><td>1</td><td>--</td>
 </tr><tr>

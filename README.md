@@ -23,7 +23,7 @@ LED red 3mm x2 --> <a href='https://fr.aliexpress.com/item/4000968613440.html?sp
 Capacitor 10nF x16--> <a href='https://fr.aliexpress.com/item/32971478818.html?spm=a2g0o.productlist.0.0.48e15dd8AisfZd&algo_pvid=null&algo_expid=null&btsid=2100bdcf16100180514308589e6eca&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 High Frequency Low ESR Aluminum Capacitor 10µF 10V x1 --> <a href='https://www.aliexpress.com/item/33030332216.html?spm=a2g0o.productlist.0.0.12d330a9jR84Fg&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100182886983809e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 Capacitor 0.1µF x1 --> <a href='https://fr.aliexpress.com/item/32719073307.html?spm=a2g0o.productlist.0.0.5a29ffee2lW9PU&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100185559405052e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
-Resistor 1/4W 1k&#x2126; x2<BR />
+Resistor 1/4W 4.7k&#x2126; x2<BR />
 Resistor 1/4W 10k&#x2126; x1<BR />
 Header male angle 2x15pin x1 --> <a href='https://fr.aliexpress.com/item/33043163402.html?spm=a2g0o.productlist.0.0.20038875rufBHE&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100186293925166e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 Header female 2x15pin x1<BR />

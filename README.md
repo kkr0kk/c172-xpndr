@@ -7,7 +7,7 @@ Format 160x41 mm<BR />
 Electronics are design with EasyEDA.<BR />
 3D parts are design with SolidWorks.<BR />
 
-The total cost (without shipping cost) is less than <H2>10 euros</H2> (controller mega included)
+The total cost (without shipping cost) is less than <BOLD>10 euros</BOLD> (controller mega included)
 
 Only electronics, you can choose the microcontroller of your choice, the base design have addtionnal card for Mega2560R3.
 

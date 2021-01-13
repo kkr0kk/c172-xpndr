@@ -49,11 +49,11 @@ Header female 1x6pin x4 (for 7 segment)<BR />
 </tr><tr>
 	<td>26</td><td>6</td><td>SW1 - mode standby</td>
 </tr><tr>
-	<td>27</td><td>7</td><td>SW1 - mode</td>
+	<td>27</td><td>7</td><td>SW1 - mode test</td>
 </tr><tr>
-	<td>28</td><td>8</td><td>SW1 - mode</td>
+	<td>28</td><td>8</td><td>SW1 - mode on</td>
 </tr><tr>
-	<td>29</td><td>9</td><td>SW1 - mode</td>
+	<td>29</td><td>9</td><td>SW1 - mode alt</td>
 </tr><tr>
 	<td>30</td><td>10</td><td>SW2 - IDT</td>
 </tr><tr>

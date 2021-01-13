@@ -109,3 +109,6 @@ Support for mega 2560 R3
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega2560R3.png" />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png" />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega%202560%20R3%20-%20PCB.png" />
+
+<H3>Adaptateur for 195x55 mm mount with front screws</H3>
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/adaptateur.png" />

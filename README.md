@@ -1,8 +1,8 @@
 # c172-xpndr
 <H1>NOT TESTED YET, Work in progress</H1><BR />
-SIM Cessna 172 - Transpondeur
+SIM Cessna 172 - Transpondeur Bendix King KT 76C
 
-Build your own transponder for simulation cessna 172.<BR />
+Build your own transponder for simulation cockpit cessna 172.<BR />
 Format 160x41 mm<BR />
 Electronics are design with EasyEDA.<BR />
 3D parts are design with SolidWorks.<BR />
@@ -11,7 +11,7 @@ Total cost (without shipping cost) is less than 10 euros (controller mega includ
 
 Only electronics, you can choose the microcontroller of your choice, the base design have addtionnal card for Mega2560R3.
 
-For mine i use Mega2560R3 and Mobiflight --> <a href='https://www.mobiflight.com/en/index.html'>MOBIFLIGHT</a><BR />
+For mine i use Mega2560R3 and Mobiflight on MSFS2020--> <a href='https://www.mobiflight.com/en/index.html'>MOBIFLIGHT</a><BR />
 For others controllers you need to design the support for the card, or add wires to link them.
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/C172-XPNDR-shematics.png" />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/PCB.png" />

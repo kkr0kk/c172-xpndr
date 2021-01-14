@@ -13,8 +13,8 @@ Only electronics, you can choose the microcontroller of your choice, the base de
 
 For mine i use Mega2560R3 and Mobiflight on MSFS2020--> <a href='https://www.mobiflight.com/en/index.html'>MOBIFLIGHT</a><BR />
 For others controllers you need to design the support for the card, or add wires to link them.
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/C172-XPNDR-shematics.png" />
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/PCB.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-shematics.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/PCB.png" />
 Parts list:
 
 MAX7219 x1 --> <a href='https://fr.aliexpress.com/item/4001027015865.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />
@@ -31,7 +31,7 @@ Header male angle 2x15pin x1 --> <a href='https://fr.aliexpress.com/item/3304316
 Header female 2x15pin x1<BR />
 Header female 1x6pin x4 (for 7 segment)<BR />
 
-<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/C172-XPNDR-3D.png' /><BR />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-3D.png' /><BR />
 <table>
 <tr>
 	<th>PIN mega2560 R3</th><th>PIN Header H1</th><th>Device</th>
@@ -102,13 +102,13 @@ Header female 1x6pin x4 (for 7 segment)<BR />
 TEXT is printing with this technics --> https://www.youtube.com/watch?v=t8PpQtInVhE
 STL files with text is ready for print directly, the text layer are 0.3mm layer, add a pause a 0.31mm that you can change the color and drop down the head by one click directly on the motor and resume the print
 
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/chassis.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png" />
 
 Support for mega 2560 R3
 
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega2560R3.png" />
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png" />
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/support%20mega%202560%20R3%20-%20PCB.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega2560R3.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20PCB.png" />
 
 <H3>Adaptateur for 195x55 mm mount with front screws</H3>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/adaptateur.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png" />

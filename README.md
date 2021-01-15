@@ -29,7 +29,7 @@ Resistor 1/4W 10k&#x2126; x1<BR />
 Resistor 1/4W 10k&#x2126; x2<BR />
 Header male angle 2x15pin x1 --> <a href='https://fr.aliexpress.com/item/33043163402.html?spm=a2g0o.productlist.0.0.20038875rufBHE&algo_pvid=null&algo_expid=null&btsid=0b0a0ac216100186293925166e3a40&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'>Aliexpress</a><BR />
 Header female 2x15pin x1<BR />
-Header female 1x6pin x4 (for 7 segment)<BR />
+Header female 1x6pin x4 (for 7 segment)<BR /> <a href='https://fr.aliexpress.com/item/4000106121057.html?spm=a2g0s.9042311.0.0.584d6c374vkTRE'>aliexpress</a><BR />
 
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-3D.png' /><BR />
 <table>

@@ -15,6 +15,9 @@ For mine i use Mega2560R3 and Mobiflight on MSFS2020--> <a href='https://www.mob
 For others controllers you need to design the support for the card, or add wires to link them.
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-shematics.png" />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/PCB.png" />
+
+Capacitor C3 to C18 are optionnals, they just do debounce for switch, but work fine wihtout on mobiflight.<BR/>
+
 Parts list:
 
 MAX7219 x1 --> <a href='https://fr.aliexpress.com/item/4001027015865.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />

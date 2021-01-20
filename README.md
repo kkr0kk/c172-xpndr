@@ -1,5 +1,4 @@
 # c172-xpndr
-<H1>NOT TESTED YET, Work in progress</H1><BR />
 SIM Cessna 172 - Transpondeur Bendix King KT 76C - DIY
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C.jpg' />
 Build your own transponder for simulation cockpit cessna 172.<BR />
@@ -107,7 +106,7 @@ STL files with text is ready for print directly, the text layer are 0.3mm layer,
 
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png" />
 
-Support for mega 2560 R3
+Support for mega 2560 R3 (<H1>NOT TESTED YET, Work in progress</H1><BR />)
 
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega2560R3.png" />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png" />

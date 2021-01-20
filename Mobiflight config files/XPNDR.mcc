@@ -1,86 +1,218 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
-    <config guid="9d72a35f-fc5b-478a-b859-c8a7cc18f500">
+    <config guid="cd270003-8025-4570-b435-b6283f520bf8">
       <active>true</active>
-      <description>Transponder code</description>
+      <description>XPNDR code</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="FSUIPC" offset="0x0354" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" />
-        <preconditions />
-        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="0a6e2e98-41d9-4568-8d1d-31f33fac805f">
-      <active>true</active>
-      <description>LED on</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
-        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Pin" serial="XPNDR/ SN-850-5fd" trigger="normal" pin="LED on" pinBrightness="255" />
-        <preconditions />
-        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="&gt;" value="0" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="if(#=2,8888,$)" substrStart="0" substrEnd="7" />
         <configrefs>
-          <configref active="False" ref="c582faf7-8f0e-4747-ae7a-a88888efb292" placeholder="§" />
-          <configref active="False" ref="9d72a35f-fc5b-478a-b859-c8a7cc18f500" placeholder="#" />
+          <configref active="False" ref="9b6c0061-3b32-467d-8562-9b800ff0282d" placeholder="B" />
+          <configref active="False" ref="a7aa84a6-f215-4a5f-a40b-3f23ed891218" placeholder="A" />
+          <configref active="False" ref="510840c4-7376-4018-b732-245e286f5aee" placeholder="@" />
+          <configref active="False" ref="9b6c0061-3b32-467d-8562-9b800ff0282d" placeholder="?" />
+          <configref active="False" ref="a7aa84a6-f215-4a5f-a40b-3f23ed891218" placeholder="§" />
+          <configref active="True" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" placeholder="#" />
         </configrefs>
       </settings>
     </config>
-    <config guid="c582faf7-8f0e-4747-ae7a-a88888efb292">
+    <config guid="3c27b487-c15a-4ec7-aaca-7ca7d8f49413">
       <active>true</active>
-      <description>LED alt</description>
+      <description>XPNDR off mode</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <source type="FSUIPC" offset="0x0000" offsetType="String" size="255" mask="0xFFFF" bcdMode="True" />
+        <comparison active="True" value="1" operand="!=" ifValue="    " elseValue="    " />
+        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="0000" substrStart="0" substrEnd="3" />
+        <configrefs>
+          <configref active="False" ref="9b6c0061-3b32-467d-8562-9b800ff0282d" placeholder="B" />
+          <configref active="False" ref="a7aa84a6-f215-4a5f-a40b-3f23ed891218" placeholder="A" />
+          <configref active="False" ref="510840c4-7376-4018-b732-245e286f5aee" placeholder="@" />
+          <configref active="False" ref="9b6c0061-3b32-467d-8562-9b800ff0282d" placeholder="?" />
+          <configref active="False" ref="a7aa84a6-f215-4a5f-a40b-3f23ed891218" placeholder="§" />
+          <configref active="False" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0bbf49ab-3842-4403-922d-8241eb78a619">
+      <active>true</active>
+      <description>XPNDR ON led</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="XPNDR/ SN-850-5fd" trigger="normal" pin="LED on" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="if(($=3)|($=2)|($=4),1,0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="0706be82-d498-4339-87dd-949c627aeec7" placeholder="D" />
+          <configref active="False" ref="81c5a60a-4bf3-437b-ad7a-44d05e64e1a5" placeholder="C" />
+          <configref active="False" ref="4a5cbfa9-a5a2-4699-898c-849199c973c2" placeholder="@" />
+          <configref active="False" ref="2bcd9449-75ff-42f7-a242-1d601c88ee65" placeholder="?" />
+          <configref active="False" ref="c7e6007b-1d27-44e6-ba0d-18db870e44c0" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="3e1062b6-0904-4d68-b699-47bca3161457">
+      <active>true</active>
+      <description>XPNDR ALT led</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="XPNDR/ SN-850-5fd" trigger="normal" pin="LED alt" pinBrightness="255" />
         <preconditions />
-        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <transformation active="True" expression="if($=4|$=2,1,0)" substrStart="0" substrEnd="7" />
         <configrefs>
-          <configref active="False" ref="0a6e2e98-41d9-4568-8d1d-31f33fac805f" placeholder="§" />
-          <configref active="False" ref="9d72a35f-fc5b-478a-b859-c8a7cc18f500" placeholder="#" />
+          <configref active="False" ref="0706be82-d498-4339-87dd-949c627aeec7" placeholder="B" />
+          <configref active="False" ref="81c5a60a-4bf3-437b-ad7a-44d05e64e1a5" placeholder="A" />
+          <configref active="False" ref="4a5cbfa9-a5a2-4699-898c-849199c973c2" placeholder="@" />
+          <configref active="False" ref="2bcd9449-75ff-42f7-a242-1d601c88ee65" placeholder="?" />
+          <configref active="False" ref="ac28d081-8edf-4239-926d-3767c3a00b73" placeholder="§" />
+          <configref active="False" ref="b614e98e-abdb-4464-867f-2d5a95540498" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="869ef8d9-e61f-4540-bdab-52ea60cf2e32">
+      <active>true</active>
+      <description>XPNDR select mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="0706be82-d498-4339-87dd-949c627aeec7" placeholder="B" />
+          <configref active="False" ref="81c5a60a-4bf3-437b-ad7a-44d05e64e1a5" placeholder="A" />
+          <configref active="False" ref="4a5cbfa9-a5a2-4699-898c-849199c973c2" placeholder="@" />
+          <configref active="False" ref="2bcd9449-75ff-42f7-a242-1d601c88ee65" placeholder="?" />
+          <configref active="False" ref="ac28d081-8edf-4239-926d-3767c3a00b73" placeholder="§" />
+          <configref active="False" ref="b614e98e-abdb-4464-867f-2d5a95540498" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c7e6007b-1d27-44e6-ba0d-18db870e44c0">
+      <active>true</active>
+      <description>XPNDR FL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x3544" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="=" value="4" logic="or" />
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="=" value="2" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="if(#=2,888,($/100)+1)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="0706be82-d498-4339-87dd-949c627aeec7" placeholder="B" />
+          <configref active="False" ref="81c5a60a-4bf3-437b-ad7a-44d05e64e1a5" placeholder="A" />
+          <configref active="False" ref="4a5cbfa9-a5a2-4699-898c-849199c973c2" placeholder="@" />
+          <configref active="False" ref="2bcd9449-75ff-42f7-a242-1d601c88ee65" placeholder="?" />
+          <configref active="False" ref="ac28d081-8edf-4239-926d-3767c3a00b73" placeholder="§" />
+          <configref active="True" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7ec63eaf-8b92-42d2-9244-2825104402bb">
+      <active>true</active>
+      <description>XPNDR FL off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="String" size="255" mask="0xFFFFFFFF" bcdMode="False" />
+        <comparison active="True" value="5" operand="=" ifValue="   " elseValue="   " />
+        <display type="Display Module" serial="XPNDR/ SN-850-5fd" trigger="normal" ledAddress="SCREEN" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="!=" value="4" logic="and" />
+          <precondition type="config" active="true" ref="869ef8d9-e61f-4540-bdab-52ea60cf2e32" operand="!=" value="2" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="($/100)+1" substrStart="0" substrEnd="2" />
+        <configrefs>
+          <configref active="False" ref="0706be82-d498-4339-87dd-949c627aeec7" placeholder="B" />
+          <configref active="False" ref="81c5a60a-4bf3-437b-ad7a-44d05e64e1a5" placeholder="A" />
+          <configref active="False" ref="4a5cbfa9-a5a2-4699-898c-849199c973c2" placeholder="@" />
+          <configref active="False" ref="2bcd9449-75ff-42f7-a242-1d601c88ee65" placeholder="?" />
+          <configref active="False" ref="ac28d081-8edf-4239-926d-3767c3a00b73" placeholder="§" />
+          <configref active="False" ref="b614e98e-abdb-4464-867f-2d5a95540498" placeholder="#" />
         </configrefs>
       </settings>
     </config>
   </outputs>
   <inputs>
-    <config guid="1f654a9d-e425-48b5-bead-5b470e7a711f">
+    <config guid="de944da5-adef-4ee3-a2b3-186be1ab5f06">
       <active>true</active>
-      <description>IDT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="IDT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>XPNDR mode OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderIDT" />
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="0" />
+          </onPress>
           <onRelease />
         </button>
         <preconditions />
       </settings>
     </config>
-    <config guid="cc07e3df-0ea9-47cc-aa69-f367e1199cba">
+    <config guid="687002ba-00cf-4a33-a15b-24da5b9c206f">
       <active>true</active>
-      <description>CLEAR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="CLEAR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>XPNDR mode SBY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode standby" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderCLR" />
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="1" />
+          </onPress>
           <onRelease />
         </button>
         <preconditions />
       </settings>
     </config>
-    <config guid="1de21c4e-21e9-4a45-a59a-8b6e9a95b9fd">
+    <config guid="1172e53d-52ae-49ad-a188-6263f77fb9ff">
       <active>true</active>
-      <description>VFR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>XPNDR mode TEST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderVFR" />
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="2" />
+          </onPress>
           <onRelease />
         </button>
         <preconditions />
       </settings>
     </config>
-    <config guid="93b44c5e-c7e5-4084-b5ef-c00220e9414a">
+    <config guid="27c0083f-d071-4286-a715-50d9ca63b6a1">
       <active>true</active>
-      <description>0</description>
+      <description>XPNDR mode ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode on" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="3" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="b45d47b4-7833-417b-9764-61d220d50ede">
+      <active>true</active>
+      <description>XPNDR mode ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode alt" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0B46" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="4" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="98420761-a868-43e6-a024-a24396f01b54">
+      <active>true</active>
+      <description>XPNDR 0</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder0" />
@@ -89,9 +221,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="f002eb23-814b-442e-9804-bad8d7514045">
+    <config guid="68bf426b-dc33-4d0c-b109-bbaa97311bc3">
       <active>true</active>
-      <description>1</description>
+      <description>XPNDR 1</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder1" />
@@ -100,9 +232,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="872793cd-f2d2-416d-a8aa-dbc9e1144ce7">
+    <config guid="4674131b-089f-444b-a19f-410d8a7a18a4">
       <active>true</active>
-      <description>2</description>
+      <description>XPNDR 2</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder2" />
@@ -111,9 +243,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="17e814ef-2543-4741-8c4f-0a425c14d69f">
+    <config guid="d73a2678-4487-4d58-af69-369c18ad1d29">
       <active>true</active>
-      <description>3</description>
+      <description>XPNDR 3</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder3" />
@@ -122,9 +254,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="66898afb-5b9a-4600-9992-f3b577a280b6">
+    <config guid="6458a540-92cb-429f-8bf4-c5762724e46a">
       <active>true</active>
-      <description>4</description>
+      <description>XPNDR 4</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder4" />
@@ -133,9 +265,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="71034fa8-bf70-4afc-8513-de01c9ce7747">
+    <config guid="0069f169-3638-49b2-8c72-159b99acc139">
       <active>true</active>
-      <description>5</description>
+      <description>XPNDR 5</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder5" />
@@ -144,9 +276,9 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="e6403c26-27ac-4923-ab03-9cac7f0bbc57">
+    <config guid="8124ab73-04e9-43e5-abb6-d1376da88a9a">
       <active>true</active>
-      <description>6</description>
+      <description>XPNDR 6</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder6" />
@@ -155,12 +287,121 @@
         <preconditions />
       </settings>
     </config>
-    <config guid="0515017e-2e33-4b05-aade-b046b9d09fb6">
+    <config guid="fe45af59-9d7b-40dc-8080-29aacc544cb5">
       <active>true</active>
-      <description>7</description>
+      <description>XPNDR 7</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Transponder7" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="8ae77dd0-7188-498f-a18a-a636eea64449">
+      <active>true</active>
+      <description>XPNDR IDT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="IDT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderIDT" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="d8f2ba46-b391-4017-b706-7430e5bd5fd0">
+      <active>true</active>
+      <description>XPNDR CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="CLEAR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderCLR" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="d9d249e3-6218-4696-bd6b-7dad9feacc17">
+      <active>true</active>
+      <description>XPNDR VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TransponderVFR" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="bef1cc1a-de69-410b-96fc-e63b5c8bc221">
+      <active>true</active>
+      <description>XPNDR mode OFF set value</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="0" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="7c670a32-1551-4ade-877a-77762c949102">
+      <active>true</active>
+      <description>XPNDR mode SBY set value</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode standby" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="688ee03f-c43a-460e-b609-328c001f4140">
+      <active>true</active>
+      <description>XPNDR mode TEST set value</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="2" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="badaeab1-f14b-488b-92b5-f6cfaf32920b">
+      <active>true</active>
+      <description>XPNDR mode ON set value</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode on" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="3" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="31aab3f0-d1fb-41d4-8104-0f6c53a84212">
+      <active>true</active>
+      <description>XPNDR mode ALT set value</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode alt" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66E8" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="4" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="48012588-f385-4813-8850-73bed5cf859e">
+      <active>true</active>
+      <description>XPNDR mode ALT set alt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.14, Culture=neutral, PublicKeyToken=null" serial="XPNDR/ SN-850-5fd" name="mode alt" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="LuaMacroInputAction" macroName="xpndr_set_alt" value="0" />
           <onRelease />
         </button>
         <preconditions />

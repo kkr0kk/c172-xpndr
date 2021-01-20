@@ -2,7 +2,7 @@
 <Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ModuleName />
   <PowerSavingTime>600</PowerSavingTime>
-  <LedModule Name="SCREEN" DinPin="22" ClsPin="24" ClkPin="23" Brightness="7" NumModules="1" />
+  <LedModule Name="SCREEN" DinPin="22" ClsPin="24" ClkPin="23" Brightness="15" NumModules="1" />
   <Button Name="mode off" Pin="25" />
   <Button Name="mode standby" Pin="26" />
   <Button Name="mode test" Pin="27" />

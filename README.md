@@ -7,6 +7,7 @@ Format 159x41 mm for 6.25" stack<BR />
 Electronics are design with EasyEDA.<BR />
 3D parts are design with SolidWorks.<BR />
 
+PCB are sold by JLCPCB, you can use directly Gerber files --> <a href='https://jlcpcb.com/'>JLCPCB</a>
 Total cost (without shipping cost) is less than 10 euros (controller mega included)
 
 Only electronics, you can choose the microcontroller of your choice, the base design have addtionnal card for Mega2560R3.

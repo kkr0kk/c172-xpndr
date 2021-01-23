@@ -115,4 +115,7 @@ Support for mega 2560 R3 (NOT TESTED YET, Work in progress) <BR />
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20PCB.png" />
 
 <H3>Adaptateur for 195x55 mm mount with front screws</H3>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png" /><BR />
+<H2>Other Projects</H2>
+Build AutoPilot KAP140 for Cessna172 -> <a href='https://github.com/kkr0kk/c172-autopilot'>AutoPilot</a><BR />
+

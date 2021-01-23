@@ -103,7 +103,7 @@ Header female 1x6pin x4 (for 7 segment) --> <a href='https://fr.aliexpress.com/i
 </tr>
 </table>
 
-TEXT is printing with this technics --> https://www.youtube.com/watch?v=t8PpQtInVhE
+TEXT is printing with this technics --> https://www.youtube.com/watch?v=jnYfF_O7INk
 STL files with text is ready for print directly, the text layer are 0.3mm layer, add a pause a 0.31mm that you can change the color and drop down the head by one click directly on the motor and resume the print
 
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png" />

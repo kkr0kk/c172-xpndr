@@ -2,6 +2,10 @@
 SIM Cessna 172 - Transpondeur Bendix King KT 76C - DIY
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C.jpg' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C-back.jpg' />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-bottom.png?raw=true' />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-left.png?raw=true' />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-top.png?raw=true' />
+
 Build your own transponder for simulation cockpit cessna 172.<BR />
 Format 159x41 mm for 6.25" stack<BR />
 Electronics are design with EasyEDA.<BR />

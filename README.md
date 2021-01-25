@@ -25,7 +25,7 @@ Capacitor C3 to C18 are optionnals, they just do debounce for switch, but work f
 
 Parts list:
 
-MAX7219 x1 --> <a href='https://fr.aliexpress.com/item/4001027015865.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />
+MAX7219 x1 --> <a href='https://fr.aliexpress.com/item/32874536319.html?spm=a2g0s.9042311.0.0.27426c37hpiJs6'>Aliexpress</a><BR />
 Selector 2P6T x1 --> <a href='https://fr.aliexpress.com/item/32949497961.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />
 Screen 7 Seg 4 digits x2 --> <a href='https://fr.aliexpress.com/item/32673704841.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />
 Switch 8x8m x11 --> <a href='https://fr.aliexpress.com/item/32467872702.html?spm=a2g0s.9042311.0.0.338d6c379S0zX2'>Aliexpress</a><BR />

@@ -106,7 +106,12 @@ Header female 1x6pin x4 (for 7 segment) --> <a href='https://fr.aliexpress.com/i
 	<td>GND</td><td>30</td><td>GND</td>
 </tr>
 </table>
-
+<H2>3D Printing</H2>
+<H3>Materials</H3>
+- HEAD : 0.2mm and 0.6mm<BR />
+- PLA BLACK and PLA WHITE<BR />
+<H3>CURA  configuration</H3>
+With CURA you need plugin PauseAtZ, i modified the plugin to add 2 pauses (printing buttons by example) download and install it--> <a href='https://github.com/kkr0kk/c172-autopilot/blob/main/Gcode/pauseAtZ.py'>Here</a><BR />
 TEXT is printing with this technics --> https://www.youtube.com/watch?v=jnYfF_O7INk
 STL files with text is ready for print directly, the text layer are 0.3mm layer, add a pause a 0.31mm that you can change the color and drop down the head by one click directly on the motor and resume the print
 

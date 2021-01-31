@@ -1,6 +1,6 @@
 <H1>BENDIX king KT76C - Simulation Transponder - for Cessna 172 - DIY</H1>
-<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C.jpg' />
-<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C-back.jpg' />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C.jpg?raw=true' />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C-back.jpg?raw=true' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-bottom.png?raw=true' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-left.png?raw=true' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-top.png?raw=true' />
@@ -16,8 +16,8 @@ Only electronics, you can choose the microcontroller of your choice, the base de
 
 For mine i use Mega2560R3 and Mobiflight on MSFS2020--> <a href='https://www.mobiflight.com/en/index.html'>MOBIFLIGHT</a><BR />
 For others controllers you need to design the support for the card, or add wires to link them.
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-shematics.png" />
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/PCB.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-shematics.png?raw=true" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/PCB.png?raw=true" />
 
 Capacitor C3 to C18 are optionnals, they just do debounce for switch, but work fine wihtout on mobiflight.<BR/>
 
@@ -38,7 +38,7 @@ Header male angle 2x15pin x1 --> <a href='https://fr.aliexpress.com/item/3304316
 Header female 2x15pin x1<BR />
 Header female 1x6pin x4 (for 7 segment) --> <a href='https://fr.aliexpress.com/item/4000106121057.html?spm=a2g0s.9042311.0.0.584d6c374vkTRE'>aliexpress</a><BR />
 
-<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-3D.png' /><BR />
+<img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/C172-XPNDR-3D.png?raw=true' /><BR />
 <table>
 <tr>
 	<th>PIN mega2560 R3</th><th>PIN Header H1</th><th>Device</th>
@@ -114,17 +114,17 @@ With CURA you need plugin PauseAtZ, i modified the plugin to add 2 pauses (print
 TEXT is printing with this technics --> https://www.youtube.com/watch?v=jnYfF_O7INk
 STL files with text is ready for print directly, the text layer are 0.3mm layer, add a pause a 0.31mm that you can change the color and drop down the head by one click directly on the motor and resume the print
 
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png?raw=true" />
 
 <H2>SUPPORT for controller</H2>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega2560R3.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega2560R3.png?raw=true" />
 <H3>Support for mega 2560 R3</H3>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png" />
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20PCB.png" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20sh%C3%A9matic.png?raw=true" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support%20mega%202560%20R3%20-%20PCB.png?raw=true" />
 <H3>Support for mega 2560 pro mini</H3>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support_mega2560-pro-mini_PCB.png?raw=true" />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/support_mega2560-pro-mini_PCB.png?raw=true?raw=true" />
 <H3>Adaptateur for 195x55 mm mount with front screws</H3>
-<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png" /><BR />
+<img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png?raw=true" /><BR />
 <H2>Other Projects</H2>
 Build AutoPilot KAP140 for Cessna172 -> <a href='https://github.com/kkr0kk/c172-autopilot'>AutoPilot</a><BR />
 

@@ -1,5 +1,4 @@
-# c172-xpndr
-BENDIX king KT76C - simulation transponder - for Cessna 172 - DIY
+<H1>BENDIX king KT76C - simulation transponder - for Cessna 172 - DIY</H1>
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C.jpg' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/bendix-KT76C-back.jpg' />
 <img src='https://github.com/kkr0kk/c172-xpndr/blob/main/images/xpndr-with-mega2560R3-bottom.png?raw=true' />

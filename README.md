@@ -127,4 +127,5 @@ STL files with text is ready for print directly, the text layer are 0.3mm layer,
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/adaptateur.png?raw=true" /><BR />
 <H2>Other Projects</H2>
 Build AutoPilot KAP140 for Cessna172 -> <a href='https://github.com/kkr0kk/c172-autopilot'>AutoPilot</a><BR />
+Build GNS530 -> <a href='https://github.com/kkr0kk/GNS530'>GNS530</a><BR />
 

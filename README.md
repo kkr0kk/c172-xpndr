@@ -106,10 +106,13 @@ Header female 1x6pin x4 (for 7 segment) --> <a href='https://fr.aliexpress.com/i
 <H3>Materials</H3>
 - HEAD : 0.2mm and 0.6mm<BR />
 - PLA BLACK and PLA WHITE<BR />
-<H3>CURA  configuration</H3>
-With CURA you need plugin PauseAtZ, i modified the plugin to add 2 pauses (printing buttons by example) download and install it--> <a href='https://github.com/kkr0kk/c172-autopilot/blob/main/Gcode/pauseAtZ.py'>Here</a><BR />
-TEXT is printing with this technics --> https://www.youtube.com/watch?v=jnYfF_O7INk
-STL files with text is ready for print directly, the text layer are 0.3mm layer, add a pause a 0.31mm that you can change the color and drop down the head by one click directly on the motor and resume the print
+<H3>How to print this with text</H3>
+i use a rewrite plugin With CURA -> <a href='https://github.com/kkr0kk/c172-autopilot/blob/main/Gcode/pauseAtZ.py'>PauseAtZ</a><BR />
+First you need to print just the text with head 0.2mm and white PLA (piece need to be rotate 180° text must be on the plate, keep your piece in center) -> <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/STL%203Dprint%20files/chassis%20layer1.STL">STL file</a> or <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/Gcode/chassis%20layer%201%20text%20head%200.2.gcode">GCODE file</a><BR />
+When the text is print, Printer go pause, you can cancel the print.<BR />
+Change the head by 0.6mm and load new PLA black (do enormous purge)<BR />
+And go print the layer 2 -> <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/STL%203Dprint%20files/chassis%20layer2.STL">STL file</a> or <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/Gcode/chassis%20layer%202%20head%200.6.gcode">GCODE file</a><BR />
+You can use cura profile -> <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/Gcode/chassis%20text%20head%200.2%20layer%201.ini">Layer 1 profile with 0.2mm head</a> and <a href="https://github.com/kkr0kk/c172-xpndr/blob/main/Gcode/chassis%20layer%202%20head%200.6.gcode">layer 2 profile with 0.6mm head</a><BR />
 
 <img src="https://github.com/kkr0kk/c172-xpndr/blob/main/images/chassis.png?raw=true" />
 
